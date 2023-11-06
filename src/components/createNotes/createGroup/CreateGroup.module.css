@@ -1,0 +1,181 @@
+.createNewGroupSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Higher z-index to focus on the modal */
+}
+.createNewGroupReq{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    background: white;
+    height: 36vh;
+    width: 34vw;
+    z-index: 2; /* Ensure the modal is on top */
+}
+.createNewGroupSectionHeading{
+    padding-left: 1rem;
+}
+.createNewGroupSectionGroupName{
+    padding-left: 1.5rem;
+}
+.createNewGroupReq input{
+    padding-left: 0.8rem;
+    margin-left: 1.5rem;
+    border-radius: 2rem;
+    width: 15vw;
+    height: 4vh;
+    border: 1px solid gray;
+}
+.createNewGroupSectionChooseColor{
+    padding-left: 1.5rem;
+}
+.chooseGroupColor{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    padding-left: 2rem;
+}
+.chooseGroupColor button{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100%;
+    border: none;
+}
+.btn1{
+    background: rgba(179, 139, 250, 1);
+}
+.btn2{
+    background-color: rgba(255, 121, 242, 1);
+}
+.btn3{
+    background-color: rgba(67, 230, 252, 1);
+}
+.btn4{
+    background-color: rgba(241, 149, 118, 1);
+}
+.btn5{
+    background-color: rgba(0, 71, 255, 1);
+}
+.btn6{
+    background-color: rgba(102, 145, 255, 1);
+}
+.chooseGroupColor button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.createGroupBtn{
+    position: relative;
+    left: 24vw;
+    top: 3vh;
+    width: 8vw;
+    height: 4vh;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+}
+.createGroupBtn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.errorText{
+    position: absolute;
+    left: 34vw;
+    font-size: 0.6rem;
+    color: red;
+}
+/* .createNewGroupSectionHeading{
+    position: relative;
+    padding-left: 2rem;
+    top: 1.5rem;
+}
+.createNewGroupSectionGroupName{
+    position: relative;
+    padding-left: 3rem;
+    top: 3rem;
+}
+.createNewGroupReq input{
+    position: relative;
+    padding-left: 0.8rem;
+    margin-left: 1.5rem;
+    top: 3rem;
+    border-radius: 2rem;
+    width: 15vw;
+    height: 4vh;
+    border: 1px solid gray;
+}
+.createNewGroupSectionChooseColor{
+    position: relative;
+    padding-left: 3rem;
+    top: 4rem;
+}
+.chooseGroupColor{
+    position: relative;
+    padding-left: 13rem;
+    top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 14vw;
+}
+.chooseGroupColor button{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100%;
+    border: none;
+}
+.btn1{
+    background: rgba(179, 139, 250, 1);
+}
+.btn2{
+    background-color: rgba(255, 121, 242, 1);
+    ;
+}
+.btn3{
+    background-color: rgba(67, 230, 252, 1);
+}
+.btn4{
+    background-color: rgba(241, 149, 118, 1);
+}
+.btn5{
+    background-color: rgba(0, 71, 255, 1);
+}
+.btn6{
+    background-color: rgba(102, 145, 255, 1);
+}
+.chooseGroupColor button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.createGroupBtn{
+    position: relative;
+    top: 7vh;
+    left: 24.5vw;
+    width: 8vw;
+    height: 4vh;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+}
+.createGroupBtn:hover{
+    opacity: 0.8;
+}
+.errorText{
+    font-size: 1rem;
+    color: red;
+    position: absolute;
+    top: 32vh;
+} */

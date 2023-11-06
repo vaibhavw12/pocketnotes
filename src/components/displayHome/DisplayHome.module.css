@@ -1,0 +1,29 @@
+.displayNotesCard{
+    background: rgba(247, 236, 220, 1);
+    height: 100vh;
+    width: 70vw;
+}
+.homeImage img{
+    width: 35vw;
+}
+.homeImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+.appName{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+footer{
+    height: 22vh;
+    color: rgba(41, 41, 41, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2rem;
+}
+footer span{
+    padding-left: 0.5rem;
+}
