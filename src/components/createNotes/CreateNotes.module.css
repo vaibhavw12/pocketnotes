@@ -5,6 +5,10 @@ html {
     background-color: white;
     height: 100vh;
     width: 30vw;
+    /* Media query for smaller screens (e.g., mobile) */
+    @media screen and (max-width: 650px) {
+        width: 100vw; /* Full width on smaller screens */
+      }
 }
 .appName{
     font-size: 1.8rem;
@@ -12,12 +16,17 @@ html {
     letter-spacing: 0.02rem;
     padding-top: 2rem;
     padding-left: 1.2rem;
+    @media screen and (max-width: 650px) {
+        padding-left: 10%;
+      }
+   
 }
 .createSection{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 .createNotesGroupBtn{
     color: white;
@@ -28,6 +37,10 @@ html {
     letter-spacing: 0.04rem;
     border: none;
     border-radius: 1.8rem;
+    @media screen and (max-width: 650px) {
+        width: 60%; /* Full width on smaller screens */
+        height: 7vh;
+      }
 }
 .createNotesGroupBtn span{
     font-weight: 1000;
@@ -44,4 +57,7 @@ html {
     row-gap: 1vh;
     height: 65vh;
     overflow-y: scroll;
+    @media screen and (max-width: 650px) {
+        width: 100vw; /* Full width on smaller screens */
+      }
 }

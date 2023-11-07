@@ -18,6 +18,8 @@ export const CreateNotes = (props) => {
         props.setDisplay(false)
         props.setGName(gName)
         props.setGId(gId)
+        props.setShowCreateNotes(true)
+        props.setBackBtn(false)
         setActive(true)
         setClickId(gId)
     }

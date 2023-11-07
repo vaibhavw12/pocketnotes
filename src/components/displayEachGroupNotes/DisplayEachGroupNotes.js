@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styles from './DisplayEachGroupNotes.module.css'
 import sendBtn from './Vector (4).png'
+import backBtn from './Vector (5).png'
 
 export const DisplayEachGroupNotes = (props) => {
 
-  let [currentNote, setCurrentNote] = useState()
+  let [currentNote, setCurrentNote] = useState('')
   let [print, setPrint] = useState()
     // props.groupName
     // console.log(props.groupId)
@@ -15,13 +16,13 @@ export const DisplayEachGroupNotes = (props) => {
     // console.log(color)
     const divStyle = {
       backgroundColor: color, // Use the color prop to set the background color
-      height: '3rem',
-      width: '3rem',
+      height: '3.5rem',
+      width: '3.5rem',
       borderRadius: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginLeft: '2rem'
+      marginLeft: '1.5rem'
     }
 
     // console.log(getGroup[props.groupId])
@@ -37,6 +38,7 @@ export const DisplayEachGroupNotes = (props) => {
 
     const saveNote = ()=>{
       // console.log(currentNote)
+      
       if(print === true){
         setPrint(false)
       }else{
@@ -79,7 +81,7 @@ export const DisplayEachGroupNotes = (props) => {
       // console.log(getNotes.notes)
   
       localStorage.setItem("groups", JSON.stringify(getGroup));
-  
+      setCurrentNote('')
     }
 
     const handleKeyDown = (event) => {
@@ -88,9 +90,14 @@ export const DisplayEachGroupNotes = (props) => {
         saveNote();
       }
     };
+
+    const back = ()=>{
+      props.onBack()
+    }
   return (
     <div className={styles.displayEachGroupNotesCard}>
        <header className={styles.notesHeader}>
+        {window.innerWidth <= 650 ? (<img onClick={back} className={styles.backBtn} src={backBtn} alt='back'></img>) : (<></>)}
        <div style={divStyle}><span className={styles.notesGroupColor}>{props.groupName[0]+props.groupName[1]}</span></div>
         <div className={styles.notesGroupName}>{props.groupName}</div>
        </header>
@@ -98,11 +105,11 @@ export const DisplayEachGroupNotes = (props) => {
           <div className={styles.displayNotesCard}>
               {getNotes.notes.map((item,index)=>(
                   <div className={styles.eachDisplayNotesCard} key={index}>
-                      <div style={{width:'10vw'}}>
+                      <div className={styles.dateTime} >
                           <span>{item.time}</span><br></br>
                           <span>{item.date}</span>
                       </div><br></br>
-                      <div style={{width:'50vw'}}>
+                      <div className={styles.noteBy}>
                           <span>{item.textNote}</span>
                       </div>
                   </div>

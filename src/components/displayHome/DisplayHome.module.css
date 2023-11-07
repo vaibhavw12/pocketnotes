@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
+    padding-top: 20vh;
 }
 .appName{
     font-size: 2.5rem;

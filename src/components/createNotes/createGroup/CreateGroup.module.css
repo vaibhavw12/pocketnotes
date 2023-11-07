@@ -20,12 +20,23 @@
     height: 36vh;
     width: 34vw;
     z-index: 2; /* Ensure the modal is on top */
+    @media screen and (max-width: 650px) {
+        width: 80%;
+        font-size: 1rem;
+        height: 30%;
+      }
 }
 .createNewGroupSectionHeading{
     padding-left: 1rem;
+    @media screen and (max-width: 650px) {
+        padding-left: 0.4rem;
+      }
 }
 .createNewGroupSectionGroupName{
     padding-left: 1.5rem;
+    @media screen and (max-width: 650px) {
+        padding-left: 0.6rem;
+      }
 }
 .createNewGroupReq input{
     padding-left: 0.8rem;
@@ -34,21 +45,38 @@
     width: 15vw;
     height: 4vh;
     border: 1px solid gray;
+    @media screen and (max-width: 650px) {
+        width: 70%;
+        margin-left: 0.5rem;
+        padding-left: 0.4rem;
+      }
 }
 .createNewGroupSectionChooseColor{
     padding-left: 1.5rem;
+    @media screen and (max-width: 650px) {
+        padding-left: 0.6rem;
+      }
 }
 .chooseGroupColor{
     display: flex;
     justify-content: space-between;
     column-gap: 0.5rem;
     padding-left: 2rem;
+    @media screen and (max-width: 650px) {
+        padding-left: 0.6rem;
+        width: 50%;
+      }
 }
 .chooseGroupColor button{
-    width: 2vw;
-    height: 4vh;
+    width: 2rem;
+    height: 2rem;
     border-radius: 100%;
     border: none;
+    @media screen and (max-width: 650px) {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    
 }
 .btn1{
     background: rgba(179, 139, 250, 1);
@@ -84,6 +112,9 @@
     border-radius: 0.5rem;
     background-color: black;
     color: white;
+    @media screen and (max-width: 650px) {
+        width: 60%;
+      }
 }
 .createGroupBtn:hover{
     opacity: 0.8;
@@ -94,6 +125,10 @@
     left: 34vw;
     font-size: 0.6rem;
     color: red;
+    @media screen and (max-width: 650px) {
+        left: 11vw;
+      }
+    
 }
 /* .createNewGroupSectionHeading{
     position: relative;

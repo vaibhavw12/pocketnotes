@@ -6,9 +6,13 @@ import { DisplayEachGroupNotes } from '../displayEachGroupNotes/DisplayEachGroup
 export const DisplayNotes = (props) => {
   // console.log(props.gName)
   // console.log(props.gId)
+  const back = ()=>{
+    props.setBackBtn(true)
+  }
+  
   return (
-  <>
-    {props.display ? <DisplayHome></DisplayHome> : <DisplayEachGroupNotes groupId={props.gId} groupName={props.gName}></DisplayEachGroupNotes>}
-  </>
+  <div>
+    {props.display ? <DisplayHome></DisplayHome> : <DisplayEachGroupNotes onBack={back} groupId={props.gId} groupName={props.gName}></DisplayEachGroupNotes>}
+    </div>
   )
 }

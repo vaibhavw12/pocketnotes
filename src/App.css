@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,10 +35,19 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 /* ------------------------------------------------------ */
 #mainApp{
   display: flex;
   width: 100vw;
   height: 100vh;
 }
+/* For screens with a maximum width of 768px (typical mobile screens) */
+@media screen and (max-width: 650px) {
+  .display-notes {
+    display: none;
+  }
+}
+
+
+

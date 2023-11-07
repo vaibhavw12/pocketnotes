@@ -6,6 +6,7 @@ import lockImage from './Vector (3).png'
 export const DisplayHome = () => {
   return (
     <div className={styles.displayNotesCard}>
+      
       <div className={styles.homeImage}>
         <img src={homeImage} alt='default'></img>
         <span className={styles.appName}>Pocket Notes</span>

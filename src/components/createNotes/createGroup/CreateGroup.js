@@ -61,7 +61,9 @@ export const CreateGroup = (props) => {
       };
     }, [props]);
 
-    if(isInsideDiv)
+    if(isInsideDiv){
+      // dummy code
+    }
   
   return (
     <div>

@@ -2,6 +2,9 @@
     background: rgba(247, 236, 220, 1);
     height: 100vh;
     width: 70vw;
+    @media screen and (max-width: 650px) {
+        width: 100vw;
+      }
 }
 .notesHeader{
     background: rgba(232, 232, 232, 1);
@@ -25,15 +28,34 @@
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
+    @media screen and (max-width: 650px) {
+        
+      }
 }
 .notesGroupName{
     font-weight: 600;
     margin-left: 1.5rem;
     font-size: 1.7rem;
+    @media screen and (max-width: 650px) {
+        margin-left: 1rem;
+      }
 }
 .displayNotesSection{
     height: 58vh;
     overflow-y: scroll;
+}
+.dateTime{
+    width: 10vw;
+    @media screen and (max-width: 650px) {
+        width: 40vw;
+      }
+}
+.noteBy{
+    width: 50vw;
+    @media screen and (max-width: 650px) {
+        width: 70vw;
+        margin-right: 0.5rem;
+      }
 }
 .typeNotesSection{
     background: rgba(232, 232, 232, 1);
@@ -41,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .inputNotes{
     width: 63vw;
@@ -52,6 +75,10 @@
     box-shadow: 2px 2px 5px rgba(119, 183, 46, 0.3);
     font-size: 1.2rem;
     /* white-space: pre; */
+    @media screen and (max-width: 650px) {
+        width: 80vw;
+        height: 30vw;
+    }
 }
 .sendBtn{
     position: absolute;
@@ -69,10 +96,23 @@
     /* background-color: rgb(135, 111, 79); */
     display: flex;
     flex-direction: column;
+    
 }
 .eachDisplayNotesCard{
     display: flex;
     column-gap: 1vw;
     margin-left: 3rem;
     margin-bottom: 3rem;
+    @media screen and (max-width: 650px) {
+        margin-left: 0.5rem;
+      }
+}
+.backBtn{
+    margin-left: 1rem;
+    width: 6vw;
+    height: 2.5vh;
+}
+.backBtn:hover{
+    cursor: pointer;
+    filter: brightness(0.8); /* Increase brightness on hover */
 }
