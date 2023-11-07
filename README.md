@@ -1,3 +1,7 @@
+# Protyped is deployed using netlify
+
+Do check it at [pocket notes](https://pocketnotes-by-vaibhavwable.netlify.app/) and create and save the notes and also feel free to discuss and add additional functionality to it ,contributations welcome.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
